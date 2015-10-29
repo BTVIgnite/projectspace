@@ -1,10 +1,26 @@
-body {background-color: rgb(252,251,227);}
-.container {background-color: rgb(252,251,227); padding: 1em 3em 1em 3em;}
-.container h1 {color: #515151; font-weight: bold; font-size: 50px; padding-left:10px;}
+body {
+    background-color: rgb(252,251,227);
+}
+.container {
+    background-color: rgb(252,251,227);
+}
+.container h1 {
+    color: #515151; 
+    font-weight: bold; 
+    font-size: 50px;
+}
 
-.panel-info { border-style: solid; border-width:3px; border-color:grey}
+.panel-info { 
+    border-style: solid; 
+    border-width:3px; 
+    border-color:grey
+}
 
-.panel-heading {background-color: #FDB831; color:#000000; font-weight:bold;}
+.panel-heading {
+    background-color: #FDB831; 
+    color:#000000; 
+    font-weight:bold;
+}
 // Classes
 .show {
   display: block !important;
@@ -14,7 +30,8 @@ body {background-color: rgb(252,251,227);}
   visibility: hidden !important;
 }
 .invisible {
-    visibility: hidden;}
+    visibility: hidden;
+}
 footer {
     clear: both;
     position: relative;

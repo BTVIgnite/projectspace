@@ -22,22 +22,27 @@
                 <div id="slideheader">
                 <h1><a href="../index.html"><img src="../images/BTV-ignite-logo-web-vertical1.png"></a></h1>
                 </div>
-                <span class="pull-right"><a href="#"><button type="button" class="btn btn-link btn-lg">Sign-In</button></a>
-                    <a href="#"><button type="button" class="btn btn-primary btn-lg">Join</button></a>
+                <div class="row">
+                <span class="pull-right"><a href="#"><button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#loginModal">Sign-In</button></a>
+                    <a href="#"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinModal">Join</button></a>
                     </span>
+                </div><!--/row-->
                 <br />
                 
             </div><!--/row-->
             
             <div class="row">
                 <div class="well" style="height:350px;">
+                    <div class="row">
                     <div class="col-md-8" style="width:450px;">
                         <p style="font-weight:bold; font-size:20pt; padding-bottom:10px;">US Ignite:</p>
                         <p style="font-size:20px;">US Ignite is an independent nonprofit dedicated to fostering creation of the next generation of the Internet, sparking new business opportunities and profoundly impacting how Americans work, live, learn and play.</p>
+                        <button type="button" class="btn btn-link">[ Hide this message ]</button>
                     </div><!--/col-md-8-->
                     <div class="col-md-4">                        <iframe width="400" height="315" src="https://www.youtube.com/embed/2QgOgRbKY-E" frameborder="0" allowfullscreen></iframe>
                     </div><!--/col-md-4-->
-                    <button type="button" class="btn btn-link">[ Hide this message ]</button>
+                    </div><!--/row-->
+                    
                 </div><!--/well--> 
             </div><!--/row-->
             
@@ -62,7 +67,7 @@
                         </div><!--/panel-body-->
                         <div class="panel-heading" style="background-color: #FDB831; color:#000000; font-weight:bold;">
                             <h3>Local Project 2</h3>
-                            <p>Project 2 involves three supportive companys from aorund the Burlington area.</p>
+                            <p>Project 2 involves three supportive companys from around the Burlington area.</p>
                         </div><!--/panel-heading-->
                         </a></div><!--/panel-->
                 </div><!--/col-md-4-->
@@ -115,6 +120,7 @@
                 </div><!--/col-md-4-->
             </div><!--/row-->
         </div><!--/container-->
+        
     <footer>
         <div class="footerstyle">
             <p>Contact Us:</p>
@@ -122,6 +128,62 @@
 Send Email</a></p>
         </div><!--/footerstyle-->
     </footer>
+        
+        
+        <!--Login modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="loginModalLabel">Login</h4>
+                    </div><!--/modal-header-->
+                    
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmailLogin">Username</label>
+                                <input type="text" class="form-control" id="inputEmailLogin" placeholder="Username">
+                            </div><!--/form-group-->
+                            
+                            <div class="form-group">
+                                <label for="inputPasswordLogin">Password</label>
+                                <input type="password" class="form-control" id="inputPasswordLogin" placeholder="Password">
+                            </div><!--/form-group-->
+                            <button type="submit" class="btn btn-default">Login</button>
+                        </form>
+                    </div><!--/modal-body-->
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div><!--/modal-footer-->
+                </div><!--/modal-content-->
+            </div><!--/modal-dialog-->
+        </div><!--/modal-->
+        
+        
+        <!--Join modal -->
+        <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="joinModalLabel">Join</h4>
+                    </div><!--/modal-header-->
+                    
+                    <div class="modal-body">
+                        <div class="text-center">
+                        <img src="images/twitter-login-example.png">
+                        </div><!--/text-center-->
+                    </div><!--/modal-body-->
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div><!--/modal-footer-->
+                </div><!--/modal-content-->
+            </div><!--/modal-dialog-->
+        </div><!--/modal-->
+        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
